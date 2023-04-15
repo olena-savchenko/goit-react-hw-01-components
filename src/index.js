@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './components/GlobalStyle';
 
 const theme = {
   colors: {
-    text: '#212121',
-    accent: 'green',
+    lightNude: '#eaebdd',
+    lightBlue: '#d2d9d7',
   },
 };
 
@@ -16,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
+    <GlobalStyle />
   </React.StrictMode>
 );

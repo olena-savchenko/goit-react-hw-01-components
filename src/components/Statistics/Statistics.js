@@ -1,15 +1,56 @@
+import PropTypes from 'prop-types';
+import {
+  Section,
+  Title,
+  StatList,
+  StatItem,
+  Label,
+  Percentage,
+} from './Statistics.styled';
+
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul>
-        {stats.map(item => (
-          <li key={item.id}>
-            <span>{item.label}</span>
-            <span>{item.percentage}</span>
-          </li>
+    <Section>
+      {title && <Title>{title}</Title>}
+      <StatList>
+        {stats.map((item, idx) => (
+          <StatItem key={item.id} index={idx}>
+            <Label>{item.label}</Label>
+            <Percentage>{item.percentage}%</Percentage>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </Section>
   );
 };
+
+Statistics.prototype = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+};
+
+/*
+export const Statistics = ({ stats, title }) => {
+  return (
+    <Section>
+      {title && <Title>{title}</Title>}
+      <StatList>
+        {stats.map((item, idx) => (
+          <StatListItem key={item.id} id={item.id} index={idx}>
+            <Label>{item.label}</Label>
+            <Percentage>{item.percentage}%</Percentage>
+          </StatListItem>
+        ))}
+      </StatList>
+    </Section>
+  )
+}
+
+
+*/

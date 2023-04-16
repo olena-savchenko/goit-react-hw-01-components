@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #d2d9d7;
+  /* background-color: #dae3f5; */
 }
 
 code {
@@ -27,9 +27,4 @@ ul, ol {
   list-style: none;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
 `;

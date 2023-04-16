@@ -17,7 +17,7 @@ export const Friend = styled.li`
 
 export const FriendName = styled.p`
   color: ${props => props.theme.colors.grey};
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
 `;
 

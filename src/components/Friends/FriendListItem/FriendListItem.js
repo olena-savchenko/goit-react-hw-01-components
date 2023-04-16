@@ -5,12 +5,18 @@ import {
   Status,
 } from '../FriendListItem/FriendListItem.styled';
 
-export const FriendListItem = ({ avatar, name, isOnline, id }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <Friend key={id}>
+    <Friend>
       <Status isOnline={isOnline}></Status>
       <img class="avatar" src={avatar} alt={name} width="90" />
       <FriendName>{name}</FriendName>
     </Friend>
   );
+};
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };

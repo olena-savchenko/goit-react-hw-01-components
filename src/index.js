@@ -11,6 +11,7 @@ const theme = {
     grey: '#757575',
     lightblue: '#ebf5f4',
     white: '#ffffff ',
+    brightblue: '#a4d6db',
   },
   border: '2px solid rgba(0, 0, 0, 0.1)',
   boxshadow: '-1px 2px 21px 0px rgba(0, 0, 0, 0.56)',

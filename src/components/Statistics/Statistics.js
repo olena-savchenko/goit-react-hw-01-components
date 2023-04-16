@@ -34,23 +34,3 @@ Statistics.prototype = {
     }).isRequired
   ).isRequired,
 };
-
-/*
-export const Statistics = ({ stats, title }) => {
-  return (
-    <Section>
-      {title && <Title>{title}</Title>}
-      <StatList>
-        {stats.map((item, idx) => (
-          <StatListItem key={item.id} id={item.id} index={idx}>
-            <Label>{item.label}</Label>
-            <Percentage>{item.percentage}%</Percentage>
-          </StatListItem>
-        ))}
-      </StatList>
-    </Section>
-  )
-}
-
-
-*/

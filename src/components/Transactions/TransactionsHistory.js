@@ -33,7 +33,7 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
-TransactionHistory.prototype = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

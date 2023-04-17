@@ -9,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* background-color: #dae3f5; */
 }
 
 code {
@@ -25,6 +24,12 @@ ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 `;

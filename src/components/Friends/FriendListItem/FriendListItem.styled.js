@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Friend = styled.li`
-  max-width: 350px;
   display: flex;
-  padding: 10px 20px;
+  width: 350px;
   align-items: center;
   gap: 20px;
-  width: 500px;
+
+  padding: 10px 20px;
+
   border-radius: 4px;
   box-shadow: ${props => props.theme.boxshadow};
 

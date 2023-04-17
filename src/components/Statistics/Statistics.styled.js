@@ -8,10 +8,11 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
+  margin-bottom: 20px;
+
   text-transform: uppercase;
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px;
   font-weight: 700;
 `;
 
@@ -32,16 +33,18 @@ export const StatItem = styled.li`
 
 export const Label = styled.span`
   display: block;
+  margin-bottom: 10px;
+
   font-size: 20px;
   text-align: center;
-  margin-bottom: 10px;
   color: ${props => props.theme.colors.white};
 `;
 
 export const Percentage = styled.span`
+  display: block;
   font-size: 24px;
   font-weight: 600;
-  display: block;
+
   color: ${props => props.theme.colors.white};
   text-align: center;
   opacity: 0.8;

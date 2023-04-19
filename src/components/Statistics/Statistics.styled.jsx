@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from '../utils/GetRandomHexColor';
+import { getRandomHexColor } from '../../utils/GetRandomHexColor';
 
 export const Section = styled.section`
   width: 500px;
